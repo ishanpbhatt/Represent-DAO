@@ -1,0 +1,16 @@
+dependencies:
+  - OpenZeppelin/openzeppelin-contracts@4.4.1
+compiler:
+  solc:
+    remappings:
+      - '@openzeppelin=OpenZeppelin/openzeppelin-contracts@4.4.1'
+networks:
+  default: hardhat
+  kovan:
+    verify: True
+  rinkeby:
+    verify: True
+  hardhat:
+    verify: False
+wallets:
+  from_key: ${PRIVATE_KEY}
